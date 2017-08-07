@@ -1,0 +1,194 @@
+/* Predefinisane klase: */
+
+/* BUTTONS: */
+.button_grey {
+	font-size: 14px;
+	background-color: black;
+	color: grey;
+    border: 1px solid grey;
+    transition-duration: 0.4s;
+}
+
+.button_grey:hover {
+	font-size: 14px;
+	background-color: grey;
+    color: white;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+
+.button_green {
+	font-size: 14px;
+	background-color: black;
+	color: green;
+    border: 1px solid green;
+    transition-duration: 0.4s;
+}
+
+.button_green:hover {
+	font-size: 14px;
+	background-color: green;
+    color: white;
+    border: 1px solid green;
+    cursor: pointer;
+}
+
+.button_red {
+	font-size: 14px;
+	background-color: black;
+	color: red;
+    border: 1px solid red;
+    transition-duration: 0.4s;
+}
+
+.button_red:hover {
+	font-size: 14px;
+	background-color: red;
+    color: white;
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+.button_blue {
+	font-size: 14px;
+	background-color: black;
+	color: blue;
+    border: 1px solid blue;
+    transition-duration: 0.4s;
+}
+
+.button_blue:hover {
+	font-size: 14px;
+	background-color: blue;
+    color: white;
+    border: 1px solid blue;
+    cursor: pointer;
+}
+
+.button_purple {
+	font-size: 14px;
+	background-color: black;
+	color: purple;
+    border: 1px solid purple;
+    transition-duration: 0.4s;
+}
+
+.button_purple:hover {
+	font-size: 14px;
+	background-color: purple;
+    color: white;
+    border: 1px solid purple;
+    cursor: pointer;
+}
+
+.button_orange {
+	font-size: 14px;
+	background-color: black;
+	color: #ff4500;
+    border: 1px solid #ff4500;
+    transition-duration: 0.4s;
+    font-weight: 550;
+}
+
+.button_orange:hover {
+	font-size: 14px;
+	background-color: #ff4500;
+    color: white;
+    border: 1px solid #ff4500;
+    cursor: pointer;
+}
+
+/* INPUT */
+.default_input {
+	height: 18pt;
+	transition-duration: 0.4s;
+	color: #0f0;
+	background: black;
+	border: 1.5px solid #0f0;
+}
+
+.default_input:focus {
+	background: white;
+	color: black;
+	border-radius: 11px;
+	transition-duration: all 0.7s;
+}
+
+/* disable outline when focused */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+body {
+	background-color: #000;
+}
+
+p, label, li, h1 {
+	color: #0f0;
+	font-family: courier new;
+}
+
+#title_h1 {
+	text-align: center;
+}
+
+.content_members {
+	display: inline-block;
+}
+
+#content {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	display: none;
+}
+
+#info {
+	text-align: center;
+	display: none;
+}
+
+#poeni {
+	color: cyan;
+}
+
+#select {
+	text-align: center;
+}
+
+#settings {
+	text-align: center;
+	display: none;
+}
+
+#minimal {
+	width: 300px;
+}
+
+#minimal_value {
+	display: inline-block;
+}
+
+#maximal {
+	width: 300px;
+}
+
+#maximal_value {
+	display: inline-block;
+}
+
+#custom_parent_div {
+	background-color: grey;
+}
+
+#custom_child_div {
+	background-color: #0f0;
+}
+
+.select_class {
+	font-size: 18px;
+}

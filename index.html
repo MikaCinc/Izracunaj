@@ -1,0 +1,62 @@
+<html>
+	<head>
+			<script type="text/javascript" src="code.js"></script>
+			<link rel="stylesheet" type="text/css" href="style.css">
+			<meta charset="utf-8">
+			<title> Scorpio Game 1 </title>
+	</head>
+	<body>
+		<h1 id="title_h1"> Saberi ako možeš (Scorpio): </h1>
+		<div id="info">
+			<p id="timer"></p>
+			<p id="p_poeni">Broj poena: <span id="poeni"></span></p>
+			<p id="p_level">Level: <span id="level_span"></span></p>
+			<div id="parent_div">
+				<div id="child_div">
+					
+				</div>
+			</div>
+		</div>
+		<br>
+		<div id="select">
+			<button onclick="kampanja()" class="button_blue select_class">Kampanja</button>
+			<button onclick="zamena1()" class="button_orange select_class">Custom game</button>
+		</div>
+		<br>
+		<div id="content">
+			<p id="prvi_broj" class="content_members"></p>
+			<p id="znak" class="content_members"> + </p>
+			<p id="drugi_broj" class="content_members"></p>
+			<p id="jednako" class="content_members"> = </p>
+			<input type="number" id="input" class="default_input content_members" placeholder="Upiši rešenje ovde..." oninput="check(this.value)">
+			<br>
+			<div id="dodatno">
+				<button onclick="custom_drugapodesavanja()" class="button_purple">Druga podešavanja ?</button>
+				<button onclick="custom_pauza()" id="custom_pauza_id" class="button_red">Pauza</button>
+				<br>
+			</div>
+			<button id="promeni_mod" class="button_blue" onclick="promeni_mod_igre()">Promeni Mod igre</button>
+		</div>
+		<div id="settings">
+			<p>Brojevi se kreću: </p>
+			<label for="minimal">Od: </label>
+				<input type="range" min="1" max="10000" id="minimal" oninput="minimal_value(this.value)">
+				<p id="minimal_value"></p>
+				<br>
+			<label for="maximal">Do: </label>
+				<input type="range" min="1" max="10000" id="maximal" oninput="maximal_value(this.value)">
+				<p id="maximal_value"></p>
+			<p>Koliko vremena ti je potrebno? </p>
+			<input type="range" min="1" max="30" id="vreme_input" oninput="vreme_value(this.value)">
+			<p id="vreme_value"></p>
+			<p>Sabiranje / Oduzimanje: </p>
+			<select id="znak_select">
+				<option>Sabiranje</option>
+				<option>Oduzimanje</option>
+			</select>
+			<br>
+			<br>
+			<button class="button_orange" onclick="custom()">Počni</button>
+		</div>
+	</body>
+</html>
